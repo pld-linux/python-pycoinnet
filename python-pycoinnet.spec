@@ -21,8 +21,8 @@ BuildRequires:	python-modules
 %endif
 %if %{with python3}
 BuildRequires:	python3-2to3
-BuildRequires:	python3-devel >= 3.3
-BuildRequires:	python3-modules >= 3.3
+BuildRequires:	python3-devel >= 1:3.3
+BuildRequires:	python3-modules >= 1:3.3
 %endif
 Requires:	python
 BuildArch:	noarch
@@ -37,7 +37,7 @@ Summary:	Speaking the Bitcoin Protocol
 Version:	0.01
 Release:	1
 Group:		Libraries/Python
-Requires:	python3 >= 3.3
+Requires:	python3 >= 1:3.3
 
 %description -n python3-%{module}
 It provides utilities and examples for writing tools in pure Python
